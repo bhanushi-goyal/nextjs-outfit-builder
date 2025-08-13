@@ -3,7 +3,8 @@ import Canvas from '../components/Canvas';
 import CartSidebar from '../components/CartSidebar';
 
 async function getItems() {
-  const res = await fetch('http://localhost:3000/api/items', { next: { revalidate: 0 } });
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const res = await fetch(`${baseUrl}/api/items`, { next: { revalidate: 0 } });
   return res.json();
 }
 
