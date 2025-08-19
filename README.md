@@ -1,3 +1,47 @@
+# Outfit Builder - Next.js
+
+A **drag-and-drop outfit builder** web application built with **Next.js** that allows users to visually mix and match clothing items (shirts, pants, and shoes) on a virtual canvas. Once the outfit is ready, users can add it to a shopping cart for later purchase.
+
+# Features
+
+- **Drag-and-Drop Canvas** – Easily place shirts, pants, and shoes on a virtual canvas.
+- **Real-Time Preview** – See your outfit instantly as you arrange items.
+- **Cart Integration** – Save completed outfits to your shopping cart.
+- **Reset Functionality** – Clear the canvas and start fresh.
+- **Next.js Optimized** – Server-side rendering for performance.
+
+# Tech Stack
+
+- **Framework:** [Next.js]
+- **Styling:** [Tailwind CSS]
+- **State Management:** React Context API
+- **Drag & Drop:** Custom implementation
+
+# Installation
+
+1. Install dependencies
+    npm install
+2. Run development server
+    npm run dev
+3. Open the app
+    http://localhost:3000
+
+# Usage Guide
+
+Drag clothing items (shirt, pants, shoes) from the Palette onto the Canvas.
+Rearrange items by dragging them to new positions.
+Click the X button to remove an item from the canvas.
+Click Add to Cart to save your current outfit.
+View or remove saved outfits in the Cart Sidebar.
+Click Reset to start from scratch.
+
+# Cart Functionality
+Add outfit to cart – Stores all current canvas items as one outfit.
+Track timestamp – Saves the time when the outfit was added.
+Remove outfit – Delete individual outfits from the cart.
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
